@@ -1,3 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Weather</string>
+<string name="app_name">Weather App</string>
+<string name="data_extraction_city_format">%1$s</string>
+<string name="data_extraction_city_regex">\\b([A-Za-z\\s]+),\\s*[A-Z]{2}\\b</string>
+<string name="data_extraction_temperature_format">%1$s°C</string>
+<string name="data_extraction_temperature_regex">\\b(\\d+(\\.\\d+)?)\\b</string>
+<string name="data_extraction_city_format">%s</string>
+<string name="data_extraction_city_regex">City: (.+)</string>
+<string name="data_extraction_temperature_format">Temperature: %s°C</string>
+<string name="data_extraction_temperature_regex">Temperature: ([0-9]+)°C</string>
+<!-- Tambahkan nilai string lainnya sesuai kebutuhan -->
 </resources>

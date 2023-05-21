@@ -1,19 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-   Sample data extraction rules file; uncomment and customize as necessary.
-   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
-   for details.
--->
-<data-extraction-rules>
-    <cloud-backup>
-        <!-- TODO: Use <include> and <exclude> to control what is backed up.
-        <include .../>
-        <exclude .../>
-        -->
-    </cloud-backup>
-    <!--
-    <device-transfer>
-        <include .../>
-        <exclude .../>
-    </device-transfer>
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:android="http://schemas.android.com/apk/res/android">
+<rules>
+    <text-rule
+        android:name="city"
+        android:format="@string/data_extraction_city_format"
+        android:regexPattern="@string/data_extraction_city_regex" />
+    <text-rule
+        android:name="temperature"
+        android:format="@string/data_extraction_temperature_format"
+        android:regexPattern="@string/data_extraction_temperature_regex" />
+    <!-- Tambahkan aturan-aturan ekstraksi data lainnya sesuai kebutuhan -->
+</rules>
+
+<cloud-backup>
+    <!-- TODO: Use <include> and <exclude> to control what is backed up.
+    <include .../>
+    <exclude .../>
     -->
+</cloud-backup>
+<!--
+<device-transfer>
+    <include .../>
+    <exclude .../>
+</device-transfer>
+-->
 </data-extraction-rules>
